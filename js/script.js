@@ -1,17 +1,22 @@
 
 var giocatoreReale = Math.floor(Math.random()*6) +1;
-console.log(giocatoreReale);
-
+/* console.log(giocatoreReale);
+ */
 var giocatoreCpu = Math.floor(Math.random()*6) +1;
-console.log(giocatoreCpu);
+/* console.log(giocatoreCpu);
+ */
 
-var giocatoreReale = giocatoreCpu;
-var message = parità;
+var message = 'pari';
 
 if (giocatoreReale > giocatoreCpu) {
-    message = vittoria
+    message = 'Il giocatore ha vinto'
 } else if (giocatoreReale < giocatoreCpu){
-    message = lose ;
+    message = 'La cpu ha vinto';
 }
 
-console.log(message);
+/* console.log(message);
+ */
+document.getElementById('my-profyle').innerHTML += giocatoreReale;
+document.getElementById('cpu').innerHTML += giocatoreCpu;
+document.getElementById('mex').innerHTML = message;
+
