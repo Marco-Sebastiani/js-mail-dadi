@@ -1,4 +1,3 @@
-
 var element = document.getElementById("gioca");
 element.addEventListener('click',
     function(){
@@ -12,18 +11,17 @@ element.addEventListener('click',
         message = 'La cpu ha vinto';
         }
 
-        document.getElementById('my-profyle').innerHTML = 'Arianna' + giocatoreReale;
-        document.getElementById('cpu').innerHTML = 'Cpu' + giocatoreCpu;
-        document.getElementById('mex').innerHTML += message;
+        document.getElementById('my-profyle').innerHTML = 'Marco ' + giocatoreReale;
+        document.getElementById('cpu').innerHTML = 'Cpu ' + giocatoreCpu;
+        document.getElementById('mex').innerHTML = message;
     }
 );
-
 
 var resetta = document.getElementById("reset");
 resetta.addEventListener('click',
     function() {
-        document.getElementById('my-profyle').innerHTML = 'Arianna' + ' ';
-        document.getElementById('cpu').innerHTML = 'Cpu' + ' ';
+        document.getElementById('my-profyle').innerHTML = 'Marco ' + ' ';
+        document.getElementById('cpu').innerHTML = 'Cpu ' + ' ';
         document.getElementById('mex').innerHTML = ' ';
     }
 );
