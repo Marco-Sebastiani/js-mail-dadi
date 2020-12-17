@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Il lancio dei dadi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div class="box">
-        <div id="my-profyle"> </div>
-        <div id="cpu"></div>
-        <span id="mex"></span>
-        <div id="gioca">Play</div>
-        <div id="reset">Reset</div>
-    </div>
+    <section>
+        <!-- INIZIO CONTAINER -->
+        <div class="container">
+            <h1>il gioco dei dadi... tenta la fortuna</h1>
+            <!-- BOX NAME -->
+            <div class="box-dadi">
+                <div>
+                    <div id="my-profyle" class="box-player"></div>
+                    <h2>player</h2>
+                </div>
 
+                <div>
+                    <div id="cpu" class="box-cpu"></div>
+                    <h2>cpu</h2>
+                </div>
+                
+            </div>
+            <!-- / BOX NAME -->
+            <!-- BOX MESSAGE -->
+            <div class="box-event"> 
+                <span id="mex"></span>
+            </div>
+            <!-- / BOX MESSAGE -->
+            <!-- BOX CLICK -->
+            <div class="box-btn">
+                <div id="gioca" class="btn">Play</div>
+                <div id="reset" class="btn">Reset</div>
+            </div>
+            <!-- / BOX CLICK -->
+        </div>
+        <!-- / INIZIO CONTAINER -->
 
-
+    </section>
     <script src="js/script.js"></script>
 </body>
 </html>
